@@ -12,13 +12,22 @@ a {
     
 }
 
+#header .navpri ul li a{
+    color: white;
+    
+}
+
 #header {
     display: flex;
     height: 70px;
     background-color: #03161E;
     justify-content: space-between;
     align-items: center;
-    
+}
+#header{
+   position: sticky;
+   top: 0;
+   z-index: 100;
 }
     
 
@@ -37,6 +46,14 @@ a {
     width: 100%;
     background-color: #013348;
     margin-top: auto;
+}
+#bannerindex{
+    position: relative;
+}
+#bannerindex .buttonYA{
+    position: absolute;
+    top: 810px;
+    left: 640px;
 }
 
 .logoL img {
@@ -78,8 +95,8 @@ main h1 {
     margin-right: 40px;
 
 }
-.navpri ul a:hover{
-    color: red;
+#header .navpri ul li a:hover{
+    color: aqua;
     font-size: 25px;
     transition: 2s;
 }
@@ -385,7 +402,7 @@ header li {
 
 .titulodiv h1 {
     font-size: 60px;
-    color: aliceblue;
+    color: burlywood;
     padding-top: 2%;
     padding-bottom: 2%;
     text-align: center;
@@ -407,7 +424,7 @@ header li {
 .tiposclas h2 {
     font-size: 60px;
     margin-left: 10%;
-    color: antiquewhite;
+    color: burlywood;
     text-align: center;
 }
 
@@ -420,14 +437,19 @@ header li {
 #duoflex h3{
     font-size: 50px;
     color: red;
+    padding-left: 20px;
+    padding-right: 20px;
 }
+
 #duoflex p{
     font-size: 20px;
     color: aliceblue;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .distri h2 {
-    color: aliceblue;
+    color: burlywood;
     font-size: 50px;
     margin-left: 10%;
 }
