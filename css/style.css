@@ -1,0 +1,462 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    font-style: none;
+    list-style: none;
+    
+    
+}
+
+#header {
+    display: flex;
+    height: 70px;
+    background-color: #03161E;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+    
+
+#header .navpri ul a li{
+    color: aqua;
+}
+
+
+
+#main{
+    min-height: 100vh;
+    
+}
+#footer {
+    margin-top: auto;
+    width: 100%;
+    background-color: #013348;
+    margin-top: auto;
+}
+
+.logoL img {
+    display: flex;
+    height: 70px;
+    width: 70px;
+}
+
+.header li {
+    display: inline-block;
+
+}
+
+main h1 {
+    text-align: center;
+}
+
+.banner__logoinicio img {
+    width: 100%;
+    height: auto;
+}
+
+.banner__titulo {
+    background-color: #013348;
+}
+
+.banner__titulo h1 {
+    color: aliceblue;
+    font-size: 50px;
+}
+
+.navpri ul {
+    margin-right: 400px;
+    color: azure;
+    
+}
+
+.navpri ul li {
+    margin-right: 40px;
+
+}
+.navpri ul a:hover{
+    color: red;
+    font-size: 25px;
+    transition: 2s;
+}
+
+.footer__redes img {
+    width: 40px;
+    height: 40px;
+}
+
+.footer__redes ul li {
+    display: inline-block;
+     
+}
+
+.footer__redes ul {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+.footer__redes ul img{
+width: 80px;
+}
+
+
+
+
+
+/*EMPIEZA ACERCA DE*/
+
+
+header {
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+}
+#sectionparrafo12{
+    padding-top: 20px;
+
+}
+#sectionparrafo12 p{
+    font-size: 20px;
+    color: beige;
+}
+
+.section__parrafo1 {
+    display:flex;
+    margin: 30px;
+    text-align: center;
+    justify-content: space-around;
+    font-size: 15px;
+    margin-top: 0px;
+    margin-right: 30px;
+}
+.parrafo1{
+    padding-top: 7px;
+}
+.parrafo1 h1{
+    color:red;
+    font-size: 40px;
+}
+.section__parrafo2 h2{
+    color: red;
+    font-size: 40px;
+}
+
+
+#section {
+    background-color: #013348;
+}
+
+.section__imglol img{
+    height: 100%;
+    width: 100%
+}
+
+
+
+/*EMPIEZA CAMPEONES*/
+
+
+header {
+    display: flex;
+    height: 70px;
+    background-color: #03161E;
+    justify-content: space-between;
+    align-items: center;
+}
+.articleTOP{
+    display: flex;
+}
+.imgTOP img{
+    width: 160px;
+    height: 160px;
+}
+.contenedorTOP{
+    padding-top: 20px;
+    font-size: 30px;
+    color: aliceblue;
+}
+#allroles .articleTOP{
+    padding-bottom: 50px;
+}
+#allroles .articlejg{
+    padding-bottom: 50px;
+}
+#allroles .articleMID{
+    padding-bottom: 50px;
+}
+#allroles .articleADC{
+    padding-bottom: 50px;
+}
+#allroles .articleSUPP{
+    padding-bottom: 50px;
+}
+
+#allroles h3{
+    font-size: 45px
+}
+#allroles h3{
+    color: coral;
+}
+#allroles p{
+    font-size: 25px;
+    color: aliceblue;
+}
+
+
+.rolesh2{
+    text-align: center;
+    color: azure;
+    font-size: 30px;
+    padding-bottom: 35px;
+}
+
+.logoL img {
+    display: flex;
+    height: 70px;
+    width: 70px;
+}
+
+header li {
+    display: inline-block;
+}
+
+.section__titulo h1 {
+    color: aliceblue;
+    font-size: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.imagentodos img {
+    width: 100%;
+    height: 60%;
+    padding-bottom: 70px;
+}
+
+
+.articleJG{
+    display: flex;
+}
+
+.articlejg .imgJG img{
+    width: 160px;
+    height: 160px;
+}
+
+
+.articleMID{
+    display: flex;
+}
+.articleMID .imgMID img{
+    width: 160px;
+    height: 160px;
+}
+
+.articleADC{
+    display: flex;
+}
+.articleADC .imgADC img{
+    width: 160px;
+    height: 160px;
+
+}
+.articleSUPP{
+    display: flex;
+}
+.articleSUPP .imgSUPP img{
+    width: 160px;
+    height: 160px;
+
+}
+
+#footer .footer__redes {
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+
+
+/*EMPIEZA MAPA*/
+
+#main {
+    background-color: #013348;
+}
+.contenedormapa h1{
+    font-size: 60px;
+    color: aliceblue;
+    padding-top: 30px;
+}
+.contenedormapa p{
+    padding-top:  20px;
+    padding-bottom: 20px;
+    color: beige;
+    font-size: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.parrafobajomapa{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 25px;
+    color: beige;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.imgmapa img {
+    width: 100%;
+    height: 90%;
+}
+
+.dragones img {
+    text-align: center;
+    padding-top: 30px;
+    padding-left: 25%;
+}
+.heraldobaron{
+    position: relative;
+}
+.heraldobaron img{
+    width: 80%;
+    height: 80%;
+    padding-left: 40px;
+}
+#allmapa .heraldobaron{
+    display:flex
+}
+#allmapa .heraldobaron p{
+    font-size: 30px;
+    
+}
+#allmapa .heraldobaron p{
+    padding-top: 90px;
+    color: burlywood;
+
+}
+.heraldobaron .h3Baron{
+    position: absolute;
+    left: 74%;
+    top:80%
+}
+.heraldobaron .h3Baron{
+    font-size: 40px;
+    padding-top: 10px;
+}
+.heraldobaron .transformacion p{
+    width: 300px;
+    height: 300px;
+}
+.heraldobaron .transformacion p{
+    font-size: 200px;
+}
+
+
+.heraldobaron .h3heraldo{
+    position: absolute;
+    left: 150px;
+    top:80%;
+    font-size: 40px;
+}
+.imgbaron img{
+    padding-top: 50px;
+    width: 80%;
+    height: 80%;
+}
+.imgheraldo img{
+    width: 90%;
+    height: 90%;
+    padding: 50px;
+
+}
+
+
+
+/*EMPIEZA DIVISIONES*/
+
+.titulodiv h1 {
+    font-size: 60px;
+    color: aliceblue;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+}
+
+.pl p {
+    color: azure;
+    font-size: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.imgrangos img {
+    width: 90%;
+    padding-left: 15%;
+    padding-top: 2%;
+}
+
+.tiposclas h2 {
+    font-size: 60px;
+    margin-left: 10%;
+    color: antiquewhite;
+    text-align: center;
+}
+
+.soloduo{
+    color: azure;
+    margin-left: 5%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+#duoflex h3{
+    font-size: 50px;
+    color: red;
+}
+#duoflex p{
+    font-size: 20px;
+    color: aliceblue;
+}
+
+.distri h2 {
+    color: aliceblue;
+    font-size: 50px;
+    margin-left: 10%;
+}
+
+.hbp li {
+    color: whitesmoke;
+    font-size: 20px;
+    padding-left: 40%;
+    font-size: 30px;
+}
+
+.opd li {
+    color: yellowgreen;
+    font-size: 20px;
+    padding-left: 40%;
+    font-size: 30px;
+}
+
+.mgc li {
+    color: red;
+    font-size: 20px;
+    padding-left: 40%;
+    font-size: 30px;
+}
+
+#contenedorrangos{
+    display: flex;
+    justify-content: space-around
+}
+#contenedorrangos{
+    padding-top: 45px;
+}
