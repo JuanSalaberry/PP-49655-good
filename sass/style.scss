@@ -1,0 +1,508 @@
+@import "footer";
+@import "header";
+@import "main";
+@import "footer";
+@import "resetCSS";
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    font-style: none;
+    list-style: none;
+    
+}
+
+#header{
+    display: flex;
+    height: 70px;
+    background-color: #03161E;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    .logoL{
+        img{
+            display: flex;
+            height: 70px;
+            width: 70px;
+        }
+    }
+    li{
+        display: inline-block;
+    }
+    .navpri ul li a{
+        color: white;
+        &hover{
+            color: aqua;
+            font-size: 25px;
+            transition: 2s;
+        }
+    }
+    .navpri ul a li{
+        color: aqua;
+    }
+    .navpri ul{
+        margin-right: 400px;
+        color: azure;
+    }
+    .navpri ul li{
+        margin-right: 40px;
+    }
+}
+
+
+
+
+#main{
+    background-color: #013348;
+    min-height: 100vh;
+    h1{
+        text-align: center;
+    }
+    
+}
+#footer {
+    margin-top: auto;
+    width: 100%;
+    background-color: #013348;
+    margin-top: auto;
+    .footer__redes{
+        padding-bottom: 40px;
+        padding-top: 40px;
+        img{
+            width: 40px;
+            height: 40px;
+        }
+        ul li{
+            display: inline-block;
+        }
+        ul{
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+        }
+        ul img{
+            width: 80px;
+        }
+
+    }
+}
+
+
+
+
+#bannerindex{
+    position: relative;
+    .banner__titulo{
+        background-color: #013348;
+        h1{
+            font-family: 'Roboto', sans-serif;
+            color: aliceblue;
+            font-size: 50px;
+            padding-top: 10px;
+            height:100%
+        }
+        .buttonYA{
+            position: absolute;
+            text-align: center;
+            width: 100%;
+        }
+        .banner__logoinicio{
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+
+
+
+
+
+/*EMPIEZA ACERCA DE*/
+
+
+ #sectionparrafo12{
+    font-size: 18px;
+    color: beige;
+    font-family: 'Beau Rivage', cursive;
+
+    .parrafo1{
+        justify-content: space-between;
+        max-width: 50%;
+        border: 5px solid rgb(29, 50, 87)
+        h1{
+            color: red;
+            font-size: 40px;    
+        }
+        p{
+            font-size: 20px;
+            color: beige;
+        }
+        .parrafo2{
+            justify-content: space-between;
+            max-width: 50%;
+            border: 5px solid rgb(29, 50, 87)
+            h1{
+                color: red;
+                font-size: 40px;    
+            }
+            p{
+                font-size: 20px;
+                color: beige;
+
+        }
+        .section__imglol{
+            img{
+                margin-top: 10px;
+                height: 100%;
+                width: 100%
+            }
+            
+        }
+
+
+        }
+
+    }
+}
+
+
+#section {
+    background-color: #013348;
+}
+
+
+/*EMPIEZA CAMPEONES*/
+
+
+
+#140champs{
+    .section__titulo
+    h1{
+        color: aliceblue;
+        font-size: 35px;
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        font-family: 'Pacifico', cursive;
+    
+    }
+    .imagentodos
+    img{
+        width: 100%;
+        height: 60%;
+        padding-bottom: 70px;
+    }
+
+}
+
+#allroles{
+    .rolesh2{
+        text-align: center;
+        color: azure;
+        font-size: 30px;
+        padding-bottom: 35px; 
+    
+    }
+    .articleTOP{
+        padding-bottom: 50px;
+        display: flex;
+    
+    }
+    .imgTOP{
+        width: 160px;
+        height: 160px;
+    }
+    .contenedorTOP{
+        padding-top: 20px;
+        font-size: 30px;
+        color: aliceblue;
+        h3{
+            color: coral;
+            font-size: 45px 
+
+        }
+        p{
+            font-size: 25px;
+            color: aliceblue;
+        }
+    }
+    .articleJG{
+        display: flex;
+        padding-bottom: 70px;
+
+    .imgJG{
+        width: 160px;
+        height: 160px;
+    }
+    .contenedorJG{
+        h3{
+            color: coral;
+            font-size: 45px 
+
+        }
+        p{
+            font-size: 25px;
+            color: aliceblue;
+        }
+    }
+
+    .articleMID{
+        display: flex;
+        padding-bottom: 50px;
+    .imgMID{
+        width: 160px;
+        height: 160px;
+    }
+    .contenedorMID{
+        h3{
+            color: coral;
+            font-size: 45px 
+
+        }
+        p{
+            font-size: 25px;
+            color: aliceblue;
+        }
+    }
+    .articleSUPP{
+        display: flex;
+        padding-bottom: 50px;
+    }
+    .imgSUPP{
+        width: 160px;
+        height: 160px;
+    }
+    .contenedorSUPP{
+        h3{
+            color: coral;
+            font-size: 45px 
+
+        }
+        p{
+            font-size: 25px;
+            color: aliceblue;
+        }
+    }
+
+    .articleADC{
+        display: flex;
+        padding-bottom: 50px;
+    }
+    .imgADC{
+        width: 160px;
+        height: 160px;
+    }
+    .contenedorADC{
+        h3{
+            color: coral;
+            font-size: 45px 
+
+        }
+        p{
+            font-size: 25px;
+            color: aliceblue;
+        }
+    }
+}
+}
+}
+
+
+
+
+
+/*EMPIEZA MAPA*/
+
+#allmapa{
+    .contenedormapa{
+        h1{
+            font-size: 60px;
+            color: aliceblue;
+            padding-top: 30px;
+            padding-bottom: 20px;
+        }
+        p{
+            font-family: 'Chakra Petch', sans-serif;
+            color: beige;
+            font-size: 25px;
+            display: flex;
+            text-align: center;
+            padding: 0px 25px 10px 25px;
+        }
+        .imgmapa{
+            img{
+                width: 100%;
+                height: 90%;
+            }
+        .dragones{
+                img{
+                    text-align: center;
+                    padding-top: 30px;
+                    padding-left: 25%; 
+                }
+            .parrafobajomapa{
+                color: beige;
+                padding: 15px 20px 15px 20px;
+                font-size: 25px;
+                p{
+                    font-family: 'Chakra Petch', sans-serif;  
+                }
+            .heraldobaron{
+                position: relative;
+                padding-top: 90px;
+                color: burlywood;
+                font-size: 30px;
+                display:flex
+
+            }
+            
+            .h3heraldo{
+                position: absolute;
+                left: 150px;
+                top:90%;
+                font-size: 40px;
+            }
+            .h3Baron{
+                position: absolute;
+                left: 74%;
+                top:90%
+                p{
+                    font-size: 40px;
+                    padding-top: 10px;  
+                }
+            .imgheraldo{
+                img{
+                    display: flex;
+                    justify-content: center;
+                    width: 90%;
+                    height: 90%; 
+                }
+                .transformacion{
+                    width: 300px;
+                    height: 300px;
+                    p{
+                        font-size: 30px;
+                    }
+                }
+                .imgbaron{
+                    img{
+                        display: flex;
+                        justify-content: center;
+                        width: 90%;
+                        height: 90%;
+                    }
+                }
+    
+            }
+
+
+            
+                
+                
+            }
+            }
+            }
+
+            }
+        }
+}
+
+
+
+
+
+
+/*EMPIEZA DIVISIONES*/
+
+#allrangos{
+    .titulodiv{
+        h1{
+            font-size: 60px;
+        color: burlywood;
+        display: flex;
+        justify-content: center;
+        }
+        .pl{
+            p{
+                font-family: 'Pacifico', cursive;
+                color: azure;
+                font-size: 25px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        .imgrangos{
+            img{
+                width: 90%;
+                padding-left: 15%;
+                padding-top: 2%;
+            }
+}
+}
+}
+}
+
+
+#duoflex{
+    .tiposclas{
+        h2{
+            font-size: 60px;
+            margin-left: 10%;
+            color: burlywood;
+            text-align: center;
+        }
+    .soloduo{
+        h3{
+            font-family: 'Pacifico', cursive;
+            font-size: 50px;
+            color: red;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 10px;
+        }
+        p{
+            font-family: 'Pacifico', cursive;
+            font-size: 20px;
+            color: aliceblue;
+            display: flex;
+            text-align: center;
+            margin-left: 10px;
+        }
+        .distri{
+            h2{
+            color: burlywood;
+            font-size: 50px;
+            margin-left: 10%;   
+            }
+}
+
+
+
+#contenedorrangos{
+    .hbp{
+        li{
+            color: whitesmoke;
+        }
+    }
+    .opd{
+        li{
+            color: yellowgreen;
+        }
+    }
+    .mgc li{
+            color: red;
+    }
+}
+}
+}
+}

@@ -1,0 +1,38 @@
+#header{
+    display: flex;
+    height: 70px;
+    background-color: #03161E;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    .logoL{
+        img{
+            display: flex;
+            height: 70px;
+            width: 70px;
+        }
+    }
+    li{
+        display: inline-block;
+    }
+    .navpri ul li a{
+        color: white;
+        &hover{
+            color: aqua;
+            font-size: 25px;
+            transition: 2s;
+        }
+    }
+    .navpri ul a li{
+        color: aqua;
+    }
+    .navpri ul{
+        margin-right: 400px;
+        color: azure;
+    }
+    .navpri ul li{
+        margin-right: 40px;
+    }
+}

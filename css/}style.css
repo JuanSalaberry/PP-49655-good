@@ -1,9 +1,9 @@
-/* Error: Expected identifier.
+/* Error: unmatched "}".
  *     ,
- * 186 | #140champs{
- *     |  ^
+ * 547 | }
+ *     | ^
  *     '
- *   sass\style.scss 186:2  root stylesheet */
+ *   sass\style.scss 547:1  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Expected identifier.\a     \2577 \a 186 \2502  #140champs{\d\a     \2502   ^\a     \2575 \a   sass\\style.scss 186:2  root stylesheet";
+  content: 'Error: unmatched "}".\a     \2577 \a 547 \2502  }\a     \2502  ^\a     \2575 \a   sass\\style.scss 547:1  root stylesheet';
 }
