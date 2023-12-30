@@ -1,8 +1,16 @@
-@import "footer";
-@import "header";
-@import "main";
-@import "footer";
-@import "resetCSS";
+body::before {
+    font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+        "Droid Sans Mono", monospace, monospace;
+    white-space: pre;
+    display: block;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-bottom: 2px solid black;
+}
+
+
+
+
 
 
 
@@ -14,82 +22,103 @@
 
 a {
     text-decoration: none;
-    font-style: none;
     list-style: none;
-    
+
 }
 
-#header{
+#header {
     display: flex;
-    height: 70px;
+    height: fit-content;
     background-color: #03161E;
     justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 0;
     z-index: 100;
-    .logoL{
-        img{
+
+    .logoL {
+        img {
             display: flex;
             height: 70px;
             width: 70px;
         }
     }
-    li{
+
+    li {
         display: inline-block;
-    }
-    .navpri ul li a{
-        color: white;
-        &hover{
-            color: aqua;
+        &hover {
+            color: #00ffff;
             font-size: 25px;
             transition: 2s;
         }
+        
     }
-    .navpri ul a li{
-        color: aqua;
+
+    .navpri ul li a {
+        color: white;
+        
+
     }
-    .navpri ul{
-        margin-right: 400px;
-        color: azure;
+
+    .navpri ul a li {
+        color: #00ffff;
+        
     }
-    .navpri ul li{
+
+    .navpri ul {
+        color: #f0ffff;
+        display: flex;
+        
+
+    }
+
+    .navpri ul li a{
         margin-right: 40px;
+        
+        
     }
 }
 
 
 
 
-#main{
+#main {
     background-color: #013348;
     min-height: 100vh;
-    h1{
+
+    h1 {
         text-align: center;
     }
-    
+
 }
+
 #footer {
+    bottom: 0;
     margin-top: auto;
     width: 100%;
     background-color: #013348;
     margin-top: auto;
-    .footer__redes{
+
+    .footer__redes {
         padding-bottom: 40px;
         padding-top: 40px;
-        img{
+
+        img {
             width: 40px;
             height: 40px;
         }
-        ul li{
+
+        ul li {
             display: inline-block;
         }
-        ul{
+
+        ul {
             text-align: center;
             display: flex;
             justify-content: space-between;
         }
-        ul img{
+
+        ul img {
             width: 80px;
         }
 
@@ -99,24 +128,27 @@ a {
 
 
 
-#bannerindex{
+#bannerindex {
     position: relative;
-    .banner__titulo{
+
+    .banner__titulo {
         background-color: #013348;
-        h1{
-            font-family: 'Roboto', sans-serif;
-            color: aliceblue;
-            font-size: 50px;
-            padding-top: 10px;
-            height:100%
+
+        h1 {
+            color: #f0f8ff;
+            text-align: center;
+
         }
-        .buttonYA{
+
+        .buttonYA {
             position: absolute;
             text-align: center;
             width: 100%;
+            bottom: 10px;
         }
-        .banner__logoinicio{
-            img{
+
+        .banner__logoinicio {
+            img {
                 width: 100%;
                 height: auto;
             }
@@ -131,48 +163,42 @@ a {
 /*EMPIEZA ACERCA DE*/
 
 
- #sectionparrafo12{
-    font-size: 18px;
-    color: beige;
-    font-family: 'Beau Rivage', cursive;
+#sectionparrafo {
+    display: flex;
+    color: #f5f5dc;
+    padding: 10px 10px 10px 10px;
 
-    .parrafo1{
-        justify-content: space-between;
+    .parrafoone {
         max-width: 50%;
-        border: 5px solid rgb(29, 50, 87)
-        h1{
-            color: red;
-            font-size: 40px;    
+        padding-right: 20px;
+
+        h1 {
+            color: #ff0000;
+            font-size: 40px;
         }
-        p{
+
+        p {
             font-size: 20px;
-            color: beige;
         }
-        .parrafo2{
-            justify-content: space-between;
-            max-width: 50%;
-            border: 5px solid rgb(29, 50, 87)
-            h1{
-                color: red;
-                font-size: 40px;    
+        }
+
+        .parrafodos {
+            h2 {
+                color: #ff0000;
+                font-size: 40px;
+                text-align: center;
             }
-            p{
+
+            p {
                 font-size: 20px;
-                color: beige;
-
-        }
-        .section__imglol{
-            img{
-                margin-top: 10px;
-                height: 100%;
-                width: 100%
             }
-            
         }
+    }
 
 
-        }
-
+#imagenlol {
+    img {
+        width: 100%;
     }
 }
 
@@ -186,19 +212,18 @@ a {
 
 
 
-#140champs{
-    .section__titulo
-    h1{
-        color: aliceblue;
+#champs {
+    .section__titulo h1 {
+        color: #f0f8ff;
         font-size: 35px;
         display: flex;
         justify-content: center;
         padding-top: 20px;
         font-family: 'Pacifico', cursive;
-    
+
     }
-    .imagentodos
-    img{
+
+    .imagentodos img {
         width: 100%;
         height: 60%;
         padding-bottom: 70px;
@@ -206,117 +231,165 @@ a {
 
 }
 
-#allroles{
-    .rolesh2{
+#allroles {
+
+    .rolestitulo {
         text-align: center;
-        color: azure;
+        color: #f0ffff;
         font-size: 30px;
-        padding-bottom: 35px; 
-    
+        padding-bottom: 35px;
+
     }
-    .articleTOP{
+
+
+    .articleTOP {
         padding-bottom: 50px;
         display: flex;
-    
+
     }
-    .imgTOP{
+
+    .imgTOP {
         width: 160px;
         height: 160px;
     }
-    .contenedorTOP{
+
+    .contenedorTOP {
+        padding-left: 20px;
         padding-top: 20px;
         font-size: 30px;
-        color: aliceblue;
-        h3{
-            color: coral;
-            font-size: 45px 
+        color: #f0f8ff;
 
+        h3 {
+            color: #ff7f50;
+            font-size: 45px
         }
-        p{
+
+        p {
             font-size: 25px;
-            color: aliceblue;
-        }
-    }
-    .articleJG{
-        display: flex;
-        padding-bottom: 70px;
-
-    .imgJG{
-        width: 160px;
-        height: 160px;
-    }
-    .contenedorJG{
-        h3{
-            color: coral;
-            font-size: 45px 
-
-        }
-        p{
-            font-size: 25px;
-            color: aliceblue;
+            color: #f0f8ff;
         }
     }
 
-    .articleMID{
+
+    .articleJG {
         display: flex;
         padding-bottom: 50px;
-    .imgMID{
-        width: 160px;
-        height: 160px;
-    }
-    .contenedorMID{
-        h3{
-            color: coral;
-            font-size: 45px 
 
+        .imgJG {
+            width: 160px;
+            height: 160px;
         }
-        p{
-            font-size: 25px;
-            color: aliceblue;
-        }
-    }
-    .articleSUPP{
-        display: flex;
-        padding-bottom: 50px;
-    }
-    .imgSUPP{
-        width: 160px;
-        height: 160px;
-    }
-    .contenedorSUPP{
-        h3{
-            color: coral;
-            font-size: 45px 
 
-        }
-        p{
-            font-size: 25px;
-            color: aliceblue;
-        }
-    }
+        .contenedorJG {
+            padding-left: 20px;
+            h3 {
+                color: #ff7f50;
+                font-size: 45px
+            }
 
-    .articleADC{
-        display: flex;
-        padding-bottom: 50px;
+            p {
+                font-size: 25px;
+                color: #f0f8ff;
+            }
+        }
     }
-    .imgADC{
-        width: 160px;
-        height: 160px;
-    }
-    .contenedorADC{
-        h3{
-            color: coral;
-            font-size: 45px 
+       
 
+
+        .articleMID {
+            padding-left: 20px;
+            padding-bottom: 50px;
+            display: flex;
+    
         }
-        p{
-            font-size: 25px;
-            color: aliceblue;
+    
+        .imgMID {
+            width: 160px;
+            height: 160px;
         }
-    }
+    
+        .contenedorMID {
+            padding-top: 20px;
+            font-size: 30px;
+            color: #f0f8ff;
+    
+            h3 {
+                color: #ff7f50;
+                font-size: 45px
+            }
+    
+            p {
+                font-size: 25px;
+                color: #f0f8ff;
+            }
+        }
+
+        
+        .articleADC{
+            display: flex;
+            padding-bottom: 50px;
+            
+        }
+        .imgADC{
+            img{
+                width: 160px;
+                height: 160px;
+            }
+        }
+        .contenedorADC {
+            padding-top: 20px;
+            font-size: 30px;
+            color: #f0f8ff;
+    
+            h3 {
+                color: #ff7f50;
+                font-size: 45px
+            }
+    
+            p {
+                font-size: 25px;
+                color: #f0f8ff;
+            }
+        }
+
+
+        .articleSUPP{
+            display: flex;
+            padding-bottom: 50px;
+            
+        }
+        .imgSUPP{
+            img{
+                width: 160px;
+                height: 160px;
+            }
+        }
+        .contenedorSUPP {
+            padding-left: 20px;
+            padding-top: 20px;
+            font-size: 30px;
+            color: #f0f8ff;
+    
+            h3 {
+                color: #ff7f50;
+                font-size: 45px
+            }
+    
+            p {
+                font-size: 25px;
+                color: #f0f8ff;
+            }
+        }
+
+
+
 }
-}
-}
+    
+
+
+
+    
+
 
 
 
@@ -324,99 +397,108 @@ a {
 
 /*EMPIEZA MAPA*/
 
-#allmapa{
-    .contenedormapa{
-        h1{
+#allmapa {
+    .contenedormapa {
+        h1 {
             font-size: 60px;
-            color: aliceblue;
+            color: #f0f8ff;
             padding-top: 30px;
             padding-bottom: 20px;
         }
-        p{
+
+        p {
             font-family: 'Chakra Petch', sans-serif;
-            color: beige;
+            color: #f5f5dc;
             font-size: 25px;
             display: flex;
             text-align: center;
             padding: 0px 25px 10px 25px;
         }
-        .imgmapa{
-            img{
-                width: 100%;
-                height: 90%;
-            }
-        .dragones{
-                img{
-                    text-align: center;
-                    padding-top: 30px;
-                    padding-left: 25%; 
-                }
-            .parrafobajomapa{
-                color: beige;
-                padding: 15px 20px 15px 20px;
-                font-size: 25px;
-                p{
-                    font-family: 'Chakra Petch', sans-serif;  
-                }
-            .heraldobaron{
-                position: relative;
-                padding-top: 90px;
-                color: burlywood;
-                font-size: 30px;
-                display:flex
-
-            }
-            
-            .h3heraldo{
-                position: absolute;
-                left: 150px;
-                top:90%;
-                font-size: 40px;
-            }
-            .h3Baron{
-                position: absolute;
-                left: 74%;
-                top:90%
-                p{
-                    font-size: 40px;
-                    padding-top: 10px;  
-                }
-            .imgheraldo{
-                img{
-                    display: flex;
-                    justify-content: center;
-                    width: 90%;
-                    height: 90%; 
-                }
-                .transformacion{
-                    width: 300px;
-                    height: 300px;
-                    p{
-                        font-size: 30px;
-                    }
-                }
-                .imgbaron{
-                    img{
-                        display: flex;
-                        justify-content: center;
-                        width: 90%;
-                        height: 90%;
-                    }
-                }
-    
-            }
-
-
-            
-                
-                
-            }
-            }
-            }
-
-            }
-        }
+    }
 }
+
+
+#imagenmapa {
+    img {
+        width: 100%;
+    }
+}
+
+
+#alldragones {
+    .dragones {
+        img {
+            padding-top: 30px;
+            padding-left: 25%;
+        }
+
+        
+        }
+    }
+
+
+#parrabajo{
+    p{
+        color: #f5f5dc;
+        padding: 15px 20px 15px 20px;
+        font-size: 25px;
+    }
+}
+
+#heraldobaron{
+    display:flex;
+    position: relative;
+    padding-top: 90px;
+    color: #deb887;
+    font-size: 30px;
+
+               
+}
+
+#fotoshb{
+    display: flex;
+   justify-content: center;
+   position: relative;
+    .fotoheraldo{
+        img{
+            width: 95%;
+            height: 100%;
+            margin-left: 30px;
+        }
+    }
+
+    .fotobaron{
+        img{
+            width: 75%;
+        }
+    }
+    .transformacion{
+         p{
+            color: #deb887;
+            font-size: 40px;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding-left: 40px;
+           }
+    
+ }
+}
+
+
+#tituloshb{
+    .tituloheraldo{
+        position: relative;
+
+        h3{
+            color: #ff0000;
+            position: absolute;
+            
+        }
+    }
+}
+
 
 
 
@@ -425,84 +507,207 @@ a {
 
 /*EMPIEZA DIVISIONES*/
 
-#allrangos{
-    .titulodiv{
-        h1{
+#allrangos {
+    .titulodiv {
+        h1 {
             font-size: 60px;
-        color: burlywood;
-        display: flex;
-        justify-content: center;
+            color: #deb887;
+            display: flex;
+            justify-content: center;
         }
+}
         .pl{
-            p{
-                font-family: 'Pacifico', cursive;
-                color: azure;
-                font-size: 25px;
-                padding-left: 20px;
-                padding-right: 20px;
-            }
+        color: azure;
+        font-size: 25px;
+        padding-left: 20px;
+        padding-right: 20px;
+        }
         .imgrangos{
             img{
                 width: 90%;
                 padding-left: 15%;
                 padding-top: 2%;
             }
-}
-}
-}
-}
-
-
-#duoflex{
-    .tiposclas{
-        h2{
-            font-size: 60px;
-            margin-left: 10%;
-            color: burlywood;
-            text-align: center;
         }
+
+}
+
+#duoflex {
+    .tiposclas{
+        font-size: 40px;
+        margin-left: 10%;
+        color: #deb887;
+        text-align: center;
+    }
+
     .soloduo{
         h3{
-            font-family: 'Pacifico', cursive;
+            text-align: center;
             font-size: 50px;
-            color: red;
-            display: flex;
-            justify-content: center;
-            padding-bottom: 10px;
+            color: #ff0000;
         }
         p{
-            font-family: 'Pacifico', cursive;
-            font-size: 20px;
-            color: aliceblue;
-            display: flex;
-            text-align: center;
-            margin-left: 10px;
+            color: azure;
+            font-size: 25px;
+            padding-left: 20px;
+            padding-right: 20px;
         }
+    }
         .distri{
-            h2{
-            color: burlywood;
-            font-size: 50px;
-            margin-left: 10%;   
-            }
-}
-
+            padding-top: 10px;
+            text-align: center;
+            font-size: 40px;
+            color: #deb887;
+        }
+    }
 
 
 #contenedorrangos{
-    .hbp{
-        li{
-            color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    font-size: 30px;
+    padding-top: 20px;
+    .hbp li {
+        color: whitesmoke;
+    }
+    
+    .opd li {
+        color: yellowgreen;
+        
+    }
+    
+    .mgc li {
+        color: red;
+        
+    }
+}
+
+
+/*EMPIEZA ACERCA DE*/
+
+@media (max-width:600px ){
+
+    #sectionparrafo{
+        .parrafoone{
+            h1{
+                font-size: 20px;
+            }
+            p{
+                font-size: 10px;
+            }
+        }
+        .parrafodos{
+            h2{
+                font-size: 20px;
+            }
+            p{
+                font-size: 10px;
+            }
+        }
+
+    }
+
+
+}
+
+@media (max-width:480px ){
+    #header{
+        .navpri{
+            ul{
+               font-size: 12px;
+            }
         }
     }
-    .opd{
-        li{
-            color: yellowgreen;
+
+}
+
+@media (max-width:446px ){
+    #header{
+    .navpri{
+        ul{
+           font-size: 10px;
         }
     }
-    .mgc li{
-            color: red;
+}
+}
+
+@media (max-width:380px ){
+    #header{
+    .navpri{
+        ul{
+          display: flex;
+          flex-direction: column;
+          
+        }
     }
 }
 }
+
+
+
+/*EMPIEZA CAMPEONES*/
+
+@media (max-width:600px ){
+
+    #champs{
+        .section__titulo{
+            h1{
+                font-size: 25px;
+            }
+        }
+    }
+    #allroles{
+        .rolestitulo{
+            h2{
+                font-size: 25px;
+            }
+        }
+        .imgTOP{
+            img{
+                width: 70px;
+                height: 70px;
+            }
+        }
+        .contenedorTOP{
+            h3{
+                font-size: 20px;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+        
+
+        .imgMID{
+            img{
+                width: 70px;
+                height: 70px;
+            }
+            }
+            .contenedorMID{
+                h3{
+                font-size: 10px;
+                }
+            }
+
+            .imgADC{
+                img{
+                    width: 70px;
+                    height: 70px;
+                }
+                
+                .contenedorADC{
+                    h3{
+                    font-size: 10px;
+                    }
+                }
+                
+            
+
+
+
+
+            }
 }
-}
+    }
